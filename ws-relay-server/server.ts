@@ -1,6 +1,6 @@
 import { Server } from "http";
-import { ServerMessage, ClientMessage } from "./common/protocol";
-import { generateID } from "./common/id";
+import { ServerMessage, ClientMessage } from "ws-relay/src/common/protocol";
+import { generateID } from "ws-relay/src/common/id";
 import WebSocket = require("ws");
 
 const log = require("loglevel");

@@ -7,7 +7,7 @@
     "@types/ws": "^7.4.0",
     "jest": "^26.6.3",
     "ts-jest": "^26.4.4",
-    "ws-relay-client": "https://github.com/rameshvarun/ws-relay-client.git#37a7371f9226ca35fcdae6d880bb1fff03418301"
+    "ws-relay": "file:../ws-relay-client"
   },
   "dependencies": {
     "eventemitter3": "^4.0.7",
