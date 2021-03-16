@@ -1,0 +1,14 @@
+{
+  "name": "ws-relay-client",
+  "dependencies": {
+    "@types/node": "^14.14.21",
+    "eventemitter3": "^4.0.7",
+    "loglevel": "^1.7.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "format": "prettier --write *.ts"
+  }
+}
