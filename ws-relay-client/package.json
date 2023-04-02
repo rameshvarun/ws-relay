@@ -2,6 +2,9 @@
   "name": "ws-relay",
   "license": "ISC",
   "version": "0.0.1",
+  "description": "A WebSocket relay client.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "dependencies": {
     "loglevel": "^1.7.1",
     "@vramesh/ws-relay-common": "^0.0.1"
@@ -12,6 +15,7 @@
   },
   "scripts": {
     "format": "prettier --write src/*.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build": "rm -rf lib/ && tsc"
   }
 }
