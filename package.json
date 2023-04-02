@@ -1,8 +1,8 @@
 {
     "name": "ws-relay-workspace",
     "workspaces": [
-        "ws-relay-client",
         "ws-relay-common",
+        "ws-relay-client",
         "ws-relay-server"
     ],
     "scripts": {
