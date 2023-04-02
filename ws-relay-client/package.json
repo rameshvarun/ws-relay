@@ -1,5 +1,5 @@
 {
-  "name": "ws-relay",
+  "name": "ws-relay-client",
   "license": "ISC",
   "version": "0.0.1",
   "description": "A WebSocket relay client.",

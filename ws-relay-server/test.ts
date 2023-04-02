@@ -1,5 +1,5 @@
 import { RelayServer } from "./server";
-import { RelayClient } from "ws-relay/src/client";
+import { RelayClient } from "ws-relay";
 
 let server: RelayServer | null;
 beforeEach(() => {
