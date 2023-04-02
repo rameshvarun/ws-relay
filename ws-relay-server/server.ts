@@ -1,6 +1,5 @@
-import { Server } from "http";
-import { ServerMessage, ClientMessage } from "ws-relay/src/common/protocol";
-import { generateID } from "ws-relay/src/common/id";
+import { ServerMessage, ClientMessage } from "@vramesh/ws-relay-common/protocol";
+import { generateID } from "@vramesh/ws-relay-common/id";
 import WebSocket = require("ws");
 
 const log = require("loglevel");
@@ -8,10 +7,10 @@ const log = require("loglevel");
 export class RelayServer {
   wss: WebSocket.Server
 
-  // Register an ID -> Connection mapping so that peers can connect to us.
+  /** Register an ID -> Connection mapping so that peers can connect to us. */
   registrations: Map<string, WebSocket> = new Map<string, WebSocket>();
 
-  // Track who is connected to who.
+  /** Track who is connected to who, so that we can close connections appropriately. */ 
   connections: Map<WebSocket, Map<string, WebSocket>> = new Map<WebSocket, Map<string, WebSocket>>();
 
   constructor(port: number) {
@@ -31,7 +30,7 @@ export class RelayServer {
       let clientID: string | null;
       conn.on("message", (data: string) => {
         log.debug(`Received data: ${data}.`);
-        let msg: ClientMessage = JSON.parse(data);
+        let msg: ClientMessage = ClientMessage.parse(JSON.parse(data));
         if (msg.kind === "register") {
           let id = msg.id || generateID();
           if (clientID) {
