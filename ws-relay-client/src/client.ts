@@ -1,8 +1,8 @@
-import { ServerMessage, ClientMessage } from "./common/protocol";
+import { ServerMessage, ClientMessage } from "../../ws-relay-common/protocol";
 import log from "loglevel";
 const EventEmitter = require("eventemitter3");
 
-export {generateID} from "./common/id";
+export {generateID} from "../../ws-relay-common/id";
 
 export class RelayConnection extends EventEmitter {
   id: string;

@@ -1,0 +1,14 @@
+{
+    "name": "@vramesh/ws-relay-common",
+    "version": "0.0.1",
+    "description": "Common code shared between the ws-relay and ws-relay-server packages.",
+    "dependencies": {
+        "zod": "^3.21.4"
+    },
+    "devDependencies": {
+        "typescript": "^5.0.3"
+    },
+    "scripts": {
+        "typecheck": "tsc --noEmit"
+    }
+}

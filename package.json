@@ -1,15 +1,13 @@
 {
-  "name": "ws-relay",
-  "license": "ISC",
-  "dependencies": {
-    "eventemitter3": "^4.0.7",
-    "loglevel": "^1.7.1"
-  },
-  "devDependencies": {
-    "prettier": "^2.2.1",
-    "@types/node": "^14.14.21"
-  },
-  "scripts": {
-    "format": "prettier --write *.ts"
-  }
+    "name": "ws-relay-workspace",
+    "workspaces": [
+        "ws-relay-client",
+        "ws-relay-common",
+        "ws-relay-server"
+    ],
+    "scripts": {
+        "test": "npm run test --workspaces --if-present",
+        "format": "npm run format --workspaces --if-present",
+        "typecheck": "npm run typecheck --workspaces --if-present"
+    }
 }
