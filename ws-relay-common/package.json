@@ -13,11 +13,6 @@
     "scripts": {
         "typecheck": "tsc --noEmit",
         "format": "prettier -w *.ts",
-        "build": "tsc"
-    },
-    "exports": {
-        "./id": "./dist/id.js",
-        "./protocol": "./dist/protocol.js",
-        "./typedevent": "./dist/typedevent.js"
+        "build": "rm -rf lib/ && tsc"
     }
 }

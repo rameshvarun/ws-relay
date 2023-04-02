@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
         "strictNullChecks": true,
-        "module": "commonjs",
+        "module": "CommonJS",
         "target": "es6",
         "sourceMap": true,
         "moduleResolution": "node",
-        "outDir": "dist",
+        "outDir": "lib",
         "declaration": true
     },
 }

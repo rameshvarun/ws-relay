@@ -1,8 +1,8 @@
-import { ServerMessage, ClientMessage } from "@vramesh/ws-relay-common/protocol";
-import { TypedEvent } from "@vramesh/ws-relay-common/typedevent";
+import { ServerMessage, ClientMessage } from "@vramesh/ws-relay-common/dist/protocol";
+import { TypedEvent } from "@vramesh/ws-relay-common/dist/typedevent";
 import log from "loglevel";
 
-export {generateID} from "@vramesh/ws-relay-common/id";
+export {generateID} from "@vramesh/ws-relay-common/dist/id";
 
 export class RelayConnection {
   id: string;
