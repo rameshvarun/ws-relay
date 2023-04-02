@@ -8,6 +8,7 @@
     "scripts": {
         "test": "npm run test --workspaces --if-present",
         "format": "npm run format --workspaces --if-present",
-        "typecheck": "npm run typecheck --workspaces --if-present"
+        "typecheck": "npm run typecheck --workspaces --if-present",
+        "build": "npm run build --workspaces --if-present"
     }
 }

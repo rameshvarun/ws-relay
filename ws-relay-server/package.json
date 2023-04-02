@@ -2,6 +2,10 @@
   "name": "ws-relay-server",
   "version": "0.0.1",
   "description": "A simple server for relaying WebSocket connections.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rameshvarun/ws-relay"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "@types/loglevel": "^1.6.3",
