@@ -2,6 +2,7 @@
     "name": "@vramesh/ws-relay-common",
     "version": "0.0.1",
     "description": "Common code shared between the ws-relay and ws-relay-server packages.",
+    "author": "Varun Ramesh",
     "dependencies": {
         "zod": "^3.21.4"
     },

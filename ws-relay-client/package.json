@@ -1,6 +1,7 @@
 {
   "name": "ws-relay",
   "license": "ISC",
+  "version": "0.0.1",
   "dependencies": {
     "loglevel": "^1.7.1",
     "@vramesh/ws-relay-common": "^0.0.1"
