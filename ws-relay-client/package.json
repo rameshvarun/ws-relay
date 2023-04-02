@@ -5,6 +5,10 @@
   "description": "A WebSocket relay client.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rameshvarun/ws-relay"
+  },
   "dependencies": {
     "loglevel": "^1.7.1",
     "@vramesh/ws-relay-common": "^0.0.1"

@@ -3,6 +3,10 @@
     "version": "0.0.1",
     "description": "Common code shared between the ws-relay and ws-relay-server packages.",
     "author": "Varun Ramesh",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rameshvarun/ws-relay"
+    },
     "dependencies": {
         "zod": "^3.21.4"
     },
