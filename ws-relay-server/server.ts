@@ -1,5 +1,5 @@
-import { ServerMessage, ClientMessage } from "@vramesh/ws-relay-common/src/protocol";
-import { generateID } from "@vramesh/ws-relay-common/src/id";
+import { ServerMessage, ClientMessage } from "@vramesh/ws-relay-common/protocol";
+import { generateID } from "@vramesh/ws-relay-common/id";
 import WebSocket = require("ws");
 
 const log = require("loglevel");
