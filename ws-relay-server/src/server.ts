@@ -140,7 +140,15 @@ export class RelayServer {
     });
   }
 
-  close() {
-    this.wss.close();
+  close(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      this.wss.close((err) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve();
+        }
+      });
+    });
   }
 }

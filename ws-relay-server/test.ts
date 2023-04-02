@@ -1,5 +1,5 @@
-import { RelayServer } from "./server";
-import { RelayClient } from "ws-relay";
+import { RelayServer } from "./src/server";
+import { RelayClient } from "ws-relay-client";
 
 let server: RelayServer | null;
 beforeEach(() => {
@@ -7,7 +7,7 @@ beforeEach(() => {
 });
 
 afterEach(() => {
-  server!.close();
+  return server!.close();
 });
 
 function connectionsSize(): number { return server!.connections.size; }
